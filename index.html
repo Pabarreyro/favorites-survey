@@ -9,5 +9,50 @@
     <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="container">
+      <form id="survey">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="food">Favorite Food</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="pizza" checked>
+              Pizza
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="ice-cream">
+              Ice-cream
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="burgers">
+              Burgers
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="color">Favorite Color</label>
+          <input id="color" type="color" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Date of Birth</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="panel">
+        <h2>Introducing <span class="outputName"></span></h2>
+        <p><span class="outputName"></span>'s favorite food is <span class="outputFood"></span></p>
+        <p><span class="outputName"></span> was born on <span class="outputdate"></span></p>
+        <p><span class="outputName"></span>'s favorite color is <span class="outputColor"></span></p>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
